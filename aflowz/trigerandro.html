@@ -1,0 +1,41 @@
+<html>
+<title>Triger Android</title>
+<head></head>
+<body>
+ <table>
+<tr>
+<td>Nama</td>
+<td><input id="txtNama" name= "txtNama" type="text" style="height: 25px; width: 150px;"
+/></td>
+</tr>
+<tr>
+<td>Pesan</td>
+<td><input id="txtPesan" name= "txtPesan" type="text" style="height: 25px; width: 250px;"
+/></td>
+</tr>
+<tr>
+<td>Button1</td>
+<td><input id="Button1" type="button" value="Kirim Dialog Box" onclick="kirimdialog()"/></td>
+</tr>
+<tr>
+<td>Button2</td>
+<td><input id="Butoon2" type="button" value="Tampilkan Pesan Toast"
+onclick="tampilpesan()"/></td>
+</tr>
+</table>
+</body>
+<script>
+function kirimdialog()
+{
+var nama = document.getElementById('txtNama').value;
+var pesan = document.getElementById('txtPesan').value;
+MyAndroid.showDialog(nama,pesan);
+}
+function tampilpesan()
+{
+var nama = document.getElementById('txtNama').value;
+var pesan = document.getElementById('txtPesan').value;
+MyAndroid.PesanToast(nama,pesan);
+}
+</script>
+</html>

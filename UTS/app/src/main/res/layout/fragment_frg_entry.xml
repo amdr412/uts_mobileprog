@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.astimen.myapplication.fragment.frg_entry">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="10dip"
+        android:background="@android:color/holo_blue_dark">
+
+
+        <TextView
+            android:id="@+id/lblUserId"
+            android:text="Nik"
+            android:layout_below="@id/txtIdRec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/txtUserId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblUserId"
+            android:background="@android:drawable/editbox_background"/>
+
+        <TextView
+            android:id="@+id/lblUserName"
+            android:text="Nama"
+            android:layout_below="@id/txtUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/txtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblUserName"
+            android:background="@android:drawable/editbox_background"/>
+
+        <TextView
+            android:id="@+id/lblPassword"
+            android:layout_below="@id/txtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ALamat"/>
+
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_below="@id/lblPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background" />
+
+        <Spinner
+            android:layout_below="@id/lblDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/department_prompt"
+            android:entries="@array/department_array"
+            android:id="@+id/spnDepartment" />
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cbxUser"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip"
+            android:text="SAVE" />
+
+
+        <Button
+            android:id="@+id/btnNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btnSave"
+            android:layout_below="@id/cbxUser"
+            android:text="NEW" />
+
+    </RelativeLayout>
+
+</FrameLayout>
